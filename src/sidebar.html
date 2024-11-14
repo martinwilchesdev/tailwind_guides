@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TailwindCSS Crash Course</title>
+    <link rel="stylesheet" href="./output.css"
+</head >
+<body class="h-full bg-gray-100 flex flex-col">
+    <header class="bg-white h-16 w-full shadow flex justify-between items-stretch">
+        <a href="#" class="text-indigo-600 text-2xl font-bold flex items-center pl-3">Logo</a>
+        <div class="flex">
+            <div class="hidden items-stretch sm:flex">
+                <a href="#" class="flex items-center text-gray-800 text-2xl px-5 transition-colors hover:text-indigo-600 hover:bg-gray-100">Home</a>
+                <a href="#" class="flex items-center text-gray-800 text-2xl px-5 transition-colors hover:text-indigo-600 hover:bg-gray-100">About</a>
+                <a href="#" class="flex items-center text-gray-800 text-2xl px-5 transition-colors hover:text-indigo-600 hover:bg-gray-100">Contact</a>
+            </div>
+            <div class="flex items-center px-3">
+                <a href="#" class="text-black py-1 px-3 transition-colors hover:text-indigo-500 hover:bg-indigo-100 rounded mx-3">Login</a>
+                <a href="#" class="bg-indigo-600 text-white py-1 px-3 rounded transition-colors ring-1 ring-offset-1 focus:ring-0 hover:ring-indigo-700 hover:bg-indigo-700">SignUp</a>
+            </div>
+            <div class="flex items-center justify-center h-full sm:hidden" >
+                <button class="flex items-center justify-center h-8 w-8 rounded transition-colors hover:bg-indigo-100 hover:text-indigo-600">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="h-16 flex flex-1">
+        <aside class="flex flex-col bg-indigo-600 text-white py-3 px-2 min-w-[200px] w-[200px] justify-start">
+            <a href="#" class="block text-xl rounded px-3 py-2 transition-colors hover:bg-indigo-700">Navigation</a>
+            <a href="#" class="block text-xl rounded px-3 py-2 transition-colors hover:bg-indigo-700">Dashboard</a>
+            <a href="#" class="block text-xl rounded px-3 py-2 transition-colors hover:bg-indigo-700">Products</a>
+            <a href="#" class="block text-xl rounded px-3 py-2 transition-colors hover:bg-indigo-700">Users</a>
+        </aside>
+    </main>
+</body>
+</html>
